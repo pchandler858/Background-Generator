@@ -22,7 +22,11 @@ function setGradient() {
 
 function setRandomGradient() {
   body.style.background =
-    "linear-gradient(to right, " + makeColor() + ", " + makeColor() + ")";
+    "linear-gradient(to right, " +
+    makeRandomColor() +
+    ", " +
+    makeRandomColor() +
+    ")";
   css.textContent = body.style.background + ";";
 }
 
