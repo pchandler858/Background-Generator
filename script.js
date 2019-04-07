@@ -3,9 +3,8 @@ var color1 = document.querySelector(".color1");
 var color2 = document.querySelector(".color2");
 var body = document.getElementById("gradient");
 var button = document.querySelector(".random");
-var randomColor1;
 
-function makeColor() {
+function makeRandomColor() {
   var arr = [];
   for (let i = 0; i < 3; i++) {
     var num = Math.floor(Math.random() * 256);
@@ -30,5 +29,3 @@ function setRandomGradient() {
 color1.addEventListener("input", setGradient);
 color2.addEventListener("input", setGradient);
 button.addEventListener("click", setRandomGradient);
-
-console.log(makeColor());
